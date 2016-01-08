@@ -1,15 +1,15 @@
-ï»¿# StageMaker
-<h1>RBPã®ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’ä½œã‚‹Javaãƒ—ãƒ­ã‚°ãƒ©ãƒ ã€‚</h1>
+# StageMaker
+<h1>RBP‚ÌƒXƒe[ƒW‚ğì‚éJavaƒvƒƒOƒ‰ƒ€B</h1>
 
-<h3>ä½¿ã„æ–¹ï¼š</h3>
-ï¼‘ï¼git bashã§StageMakerã‚’ã‚³ãƒ”ãƒ¼ã—ãŸã„ãƒ•ã‚©ãƒ«ãƒ€ã«ç§»å‹•ã™ã‚‹ã€‚<br/>
-ï¼’ï¼<code>git clone https://github.com/zawawahoge/StageMaker.git</code> ã‚’å®Ÿè¡Œã—ã€ã‚¯ãƒ­ãƒ¼ãƒ³ã•ã‚ŒãŸStageMakerãƒ•ã‚©ãƒ«ãƒ€ã«ç§»å‹•ã™ã‚‹ã€‚<br/>
-ï¼“ï¼ä½¿ç”¨ã—ãŸã„ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®RBPãƒ•ã‚©ãƒ«ãƒ€ã‚’StageMakerãƒ•ã‚©ãƒ«ãƒ€"å†…"ã«é…ç½®ã—ã€ãã®ãƒ•ã‚©ãƒ«ãƒ€åã‚’"RBP"ã«ã™ã‚‹(ã“ã†ã—ãªã„ã¨jsãƒ•ã‚¡ã‚¤ãƒ«ãŒç”Ÿæˆã•ã‚Œãªã„ï¼‰ã€‚<br/>
-ï¼”ï¼Javaã®ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã‚’<code>javac Main.java StageMaker.java</code>ã§å®Ÿè¡Œã™ã‚‹ã€‚ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ãŒæˆåŠŸã™ã‚‹ã¨ã€.classãƒ•ã‚¡ã‚¤ãƒ«ãŒè¤‡æ•°å‡ºã¦ãã‚‹ã€‚Javaã®å®Ÿè¡Œã¯ã€
-<code>java Main MyStage Figure</code>ã§ã€æˆåŠŸã™ã‚‹ã¨ç™½ã„ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ãŒç«‹ã¡ä¸ŠãŒã‚‹ã€‚<br/>
-ï¼•ï¼ã‚¹ãƒ†ãƒ¼ã‚¸ã‚’æ›¸ã„ãŸã‚‰RBPãƒ•ã‚©ãƒ«ãƒ€å†…ã«<code>MyStage.js</code>ãŒã§ãã‚‹ã®ã§ã€ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’<code>index.html</code>ã§scriptã¨ã—ã¦headå†…ã«è¨˜è¿°ã—ã¦ã€ã¿ãŸã„ãªæ„Ÿã˜ã€‚
-
-
+<h3>g‚¢•ûF</h3>
+‚PDgit bash‚ÅStageMaker‚ğƒRƒs[‚µ‚½‚¢ƒtƒHƒ‹ƒ_‚ÉˆÚ“®‚·‚éB<br/>
+‚QD<code>git clone https://github.com/zawawahoge/StageMaker.git</code> ‚ğÀs‚µAƒNƒ[ƒ“‚³‚ê‚½StageMakerƒtƒHƒ‹ƒ_‚ÉˆÚ“®‚·‚éB<br/>
+‚RDg—p‚µ‚½‚¢ƒo[ƒWƒ‡ƒ“‚ÌRBPƒtƒHƒ‹ƒ_‚ğStageMakerƒtƒHƒ‹ƒ_"“à"‚É”z’u‚µA‚»‚ÌƒtƒHƒ‹ƒ_–¼‚ğ"RBP"‚É‚·‚é(‚±‚¤‚µ‚È‚¢‚Æjsƒtƒ@ƒCƒ‹‚ª¶¬‚³‚ê‚È‚¢jB<br/>
+‚SDJava‚ÌƒRƒ“ƒpƒCƒ‹‚ğ<code>javac Main.java StageMaker.java</code>‚ÅÀs‚·‚éBƒRƒ“ƒpƒCƒ‹‚ª¬Œ÷‚·‚é‚ÆA.classƒtƒ@ƒCƒ‹‚ª•¡”o‚Ä‚­‚éB<br/>
+‚TDJava‚ÌÀs‚ÍA
+<code>java Main MyStage Figure</code>‚ÅA¬Œ÷‚·‚é‚Æ”’‚¢ƒEƒBƒ“ƒhƒE‚ª—§‚¿ã‚ª‚éBƒXƒe[ƒW‚ğ‘‚¢‚½‚çRBPƒtƒHƒ‹ƒ_“à‚É<code>MyStage.js</code>‚ª‚Å‚«‚éB<br/>
+‚UD‚±‚Ìƒtƒ@ƒCƒ‹‚ğ<code>index.html</code>‚Åscript‚Æ‚µ‚Ähead“à‚É‹Lq‚µ‚ÄA‚İ‚½‚¢‚ÈŠ´‚¶B<br/>
 <strong>
-RBPã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³0.1ã®ã¿å‹•ä½œç¢ºèªæ¸ˆã¿ã€‚
+RBP‚Ìƒo[ƒWƒ‡ƒ“0.1‚Ì‚İ“®ìŠm”FÏ‚İB
+À‚Íclone‚µ‚½ƒtƒHƒ‹ƒ_‚Å‚ÍƒRƒ“ƒpƒCƒ‹Ï‚İ‚ÅA<code>index.html</code>‚Éscriptƒtƒ@ƒCƒ‹‚Æ‚µ‚Ä“o˜^‚µ‚Ä‚é‚Ì‚ÅAã‚Ì‚PA‚QA‚T‚¾‚¯‚Ås‚¯‚é‚æB
 </strong>
