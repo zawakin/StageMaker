@@ -53,8 +53,8 @@ window.onload = function(){
 
 	//スクリーンの初期化
 	screenCanvas = document.getElementById("screen");
-	screenCanvas.width = 800;
-	screenCanvas.height = 512;
+	screenCanvas.width = 1000;
+	screenCanvas.height = 700;
 
 
 	//2dコンテキスト
@@ -148,7 +148,7 @@ object[16].set( 180, 180,  20, 120, 0, 0, 3);
 object[17].set( 200, 280,  80,  20, 0, 0, 0);*/
 
 //初期ステージ読み込み
-stage00(ball, object);
+MyStage01(ball, object);
 
 	//レンダリング処理を呼び出す-----------------------------------------------------------------------------------------------
 
