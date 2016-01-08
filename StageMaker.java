@@ -10,9 +10,12 @@ import javafx.scene.paint.Color;
 class MyStage{
     private ArrayList<Figure> figureList;
     private ArrayList<Ball> ballList;
+    private Ball initBall;
+    private boolean initposflag;
     MyStage(){
         figureList = new ArrayList<Figure>();
         ballList = new ArrayList<Ball>();
+        initposflag = false;
         // figureList.add(new Figure(   0, 497, 800, 316, 0, 0, 3));
         // figureList.add(new Figure(-300,-300, 300, 812, 0, 0, 3));
         // figureList.add(new Figure( 800,-300, 300, 812, 0, 0, 3));
@@ -23,7 +26,10 @@ class MyStage{
     public void addBall(Ball ball){
         ballList.add(ball);
     }
-
+    public void setInitPos(Point2D pos){
+        initBall = new Ball(pos.getX(),pos.getY(),10,0);
+        initposflag = true;
+    }
     public void printAllFigure(){
         System.out.println();
         for(int i=0;i<figureList.size();i++){
@@ -61,16 +67,25 @@ class MyStage{
         for(int i=0;i<ballList.size();i++){
             ballList.get(i).Draw(gc);
         }
+        if(initposflag){
+            gc.setGlobalAlpha(0.85);
+            initBall.Draw(gc);
+        }
     }
     public String getGaneCode(){
         String s = "";
+
         for(int i=0;i<figureList.size();i++){
             s += "object["+i+"].set("+figureList.get(i).getGaneCode()+");\n";
+        }
+        if(initposflag){
+            s += "ball[0].set("+initBall.getGaneCode()+");\n";
         }
         for(int i=0;i<ballList.size();i++){
             int a = i+1;
             s += "ball["+a+"].set("+ballList.get(i).getGaneCode()+");\n";
         }
+
         return s;
     }
 }

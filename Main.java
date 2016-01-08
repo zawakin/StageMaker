@@ -38,11 +38,19 @@ public class Main extends Application{
                 case V:
                     kind = 2;
                     break;
+                case X:
+                    kind = 0;
+                    break;
                 default:
                     kind = -1;
+                    break;
             }
             if(kind!=-1){
-                ms1.addBall(new Ball(nowmouse.getX(),nowmouse.getY(),20,kind));
+                if(kind==0){
+                    ms1.setInitPos(nowmouse);
+                }else{
+                    ms1.addBall(new Ball(nowmouse.getX(),nowmouse.getY(),10,kind));
+                }
                 gc.clearRect(0,0,width,height);
                 ms1.drawAllFigure(gc);
                 ms1.printAllFigure();
