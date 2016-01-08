@@ -7,4 +7,8 @@
 ３．使用したいバージョンのRBPフォルダをStageMakerフォルダ"内"に配置し、そのフォルダ名を"RBP"にする(こうしないとjsファイルが生成されない）。<br/>
 ４．Javaのコンパイルを<code>javac Main.java StageMaker.java</code>で実行する。コンパイルが成功すると、.classファイルが複数出てくる。Javaの実行は、
 <code>java Main MyStage Figure</code>で、成功すると白いウィンドウが立ち上がる。<br/>
-５．ステージを書いたらRBPフォルダ内に<code>MyStage.js</code>ができるので、このファイルを<code>index.html</code>でscriptとしてhead内に記述して、みたいな感じ。
+５．ステージを書いたらRBPフォルダ内に<code>MyStage.js</code>ができるので、このファイルを<code>index.html</code>でscriptとしてhead内に記述して、みたいな感じ。<br/>
+<strong>
+RBPのバージョン0.1のみ動作確認済み。
+実はcloneしたフォルダではコンパイル済みで、<code>index.html</code>にscriptファイルとして登録してるので、上の４.だけで行けるよ。
+</strong>
