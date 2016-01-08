@@ -10,5 +10,5 @@
 ５．ステージを書いたらRBPフォルダ内に<code>MyStage.js</code>ができるので、このファイルを<code>index.html</code>でscriptとしてhead内に記述して、みたいな感じ。<br/>
 <strong>
 RBPのバージョン0.1のみ動作確認済み。
-実はcloneしたフォルダではコンパイル済みで、<code>index.html</code>にscriptファイルとして登録してるので、上の４.だけで行けるよ。
+実はcloneしたフォルダではコンパイル済みで、<code>index.html</code>にscriptファイルとして登録してるので、上の１、２、４だけで行けるよ。
 </strong>
