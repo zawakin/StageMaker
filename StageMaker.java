@@ -24,7 +24,7 @@ class MyStage{
         }
         System.out.println(getGaneCode());
         try{
-            FileWriter fw = new FileWriter(new File("../balls-master1/MyStage.js"));
+            FileWriter fw = new FileWriter(new File("RBP/MyStage.js"));
             String ss = "var MyStage01 = function(ball, object){\n"
         	+"for(var i=0; i<object.length; i++){\n"
         	+"	object[i].alive = false;\n"
