@@ -1,4 +1,4 @@
-# StageMaker
+﻿# StageMaker
 <h1>RBPのステージを作るJavaプログラム。</h1>
 
 <h3>使い方：</h3>
@@ -8,3 +8,8 @@
 ４．Javaのコンパイルを<code>javac Main.java StageMaker.java</code>で実行する。コンパイルが成功すると、.classファイルが複数出てくる。Javaの実行は、
 <code>java Main MyStage Figure</code>で、成功すると白いウィンドウが立ち上がる。<br/>
 ５．ステージを書いたらRBPフォルダ内に<code>MyStage.js</code>ができるので、このファイルを<code>index.html</code>でscriptとしてhead内に記述して、みたいな感じ。
+
+
+<strong>
+RBPのバージョン0.1のみ動作確認済み。
+</strong>
