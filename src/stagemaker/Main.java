@@ -1,3 +1,5 @@
+package stagemaker;
+
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -14,7 +16,7 @@ public class Main extends Application{
     int width,height;
     GraphicsContext gc;
     Point2D p0,pf,nowmouse;
-
+    
     @Override
     public void start(Stage stage){
         width = 1000;
@@ -23,7 +25,10 @@ public class Main extends Application{
         stage.setHeight(height);
         Group root = new Group();
         Canvas cvs = new Canvas(width,height);
-        MyStage ms1 = new MyStage();
+        MyStage ms1 = new MyStage(width,height);
+
+        //init datatable
+
 
         gc = cvs.getGraphicsContext2D();
 
@@ -78,15 +83,18 @@ public class Main extends Application{
             ms1.drawAllFigure(gc);
             ms1.printAllFigure();
         });
-        // ms1.addFigure(new Figure(1,1,100,100));
-        // ms1.printAllFigure();
-        // ms1.drawAllFigure(gc);
+
+
         root.setCursor(Cursor.CROSSHAIR);
         root.getChildren().add(cvs);
-
         stage.setScene(new Scene(root,0,0));
         stage.show();
+
+//        Stage datastage = new DataStage(stage,ms1);
+
     }
 
-
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
